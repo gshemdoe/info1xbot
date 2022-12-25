@@ -1,0 +1,16 @@
+{
+  "name": "info-1xbet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "nodemon bot.js"
+  },
+  "author": "shemdoe",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "telegraf": "^4.11.2"
+  }
+}
