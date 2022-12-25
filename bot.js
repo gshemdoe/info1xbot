@@ -17,6 +17,11 @@ const imp = {
     mylove: -1001748858805
 }
 
+bot.start(async ctx=> {
+    await ctx.reply('welcome')
+    .catch((err)=> ctx.reply(err.message).catch((err)=> console.log(err)))
+})
+
 
 bot.on('inline_query', async ctx => {
     try {
