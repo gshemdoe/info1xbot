@@ -38,7 +38,8 @@ bot.on('inline_query', async ctx => {
                 id: `${Math.random() * 999999}`,
                 title: 'Deposit tax',
                 input_message_content: {
-                    message_text: `Customer ID: ${id1x} \nAmount: ${amnt.toLocaleString('en-us')} TZS \nFee (5%): ${fee.toLocaleString('en-us')} TZS \nFinal deposited amount: ${final.toLocaleString('en-us')} TZS`
+                    message_text: `<b>Customer ID:</b> ${id1x} \n<b>Amount:</b> ${amnt.toLocaleString('en-us')} TZS \n<b>Fee (5%):</b> ${fee.toLocaleString('en-us')} TZS \n<b>Final deposited amount:</b> ${final.toLocaleString('en-us')} TZS \n\n<b>Note:</b> <i>In some circumstances a deposit request may take up to 30 minutes to reflect on your 1xbet account.</i>`,
+                    parse_mode: 'HTML'
                 }
             },
             {
@@ -46,7 +47,7 @@ bot.on('inline_query', async ctx => {
                 id: `${Math.random() * 999999}`,
                 title: 'Withdraw tax',
                 input_message_content: {
-                    message_text: `Customer ID: ${id1x} \nAmount to Withdraw: ${amnt.toLocaleString('en-us')} TZS \nWithholding Tax (5%): ${fee.toLocaleString('en-us')} TZS \nAfter-tax Amount: ${final.toLocaleString('en-us')} TZS \n\n<b>Note:</b> <i>Withdraw request can take up to 3 hours to be completed.</i>`,
+                    message_text: `<b>Customer ID:</b> ${id1x} \n<b>Amount to Withdraw:</b> ${amnt.toLocaleString('en-us')} TZS \n<b>Withholding Tax (5%):</b> ${fee.toLocaleString('en-us')} TZS \n<b>After-tax Amount:</b> ${final.toLocaleString('en-us')} TZS \n\n<b>Note:</b> <i>Withdraw request can take up to 3 hours to be completed.</i>`,
                     parse_mode: 'HTML'
                 }
             }
