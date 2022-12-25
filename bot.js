@@ -46,9 +46,9 @@ bot.on('inline_query', async ctx => {
                 id: `${Math.random() * 999999}`,
                 title: 'Withdraw tax',
                 input_message_content: {
-                    message_text: `Customer ID: ${id1x} \nAmount to Withdraw: ${amnt.toLocaleString('en-us')} TZS \nWithholding Tax (5%): ${fee.toLocaleString('en-us')} TZS \nAfter-tax Amount: ${final.toLocaleString('en-us')} TZS \n\n<b>Note:</b> <i>Withdraw request can take up to 3 hours to be completed.</i>`
-                },
-                parse_mode: 'HTML'
+                    message_text: `Customer ID: ${id1x} \nAmount to Withdraw: ${amnt.toLocaleString('en-us')} TZS \nWithholding Tax (5%): ${fee.toLocaleString('en-us')} TZS \nAfter-tax Amount: ${final.toLocaleString('en-us')} TZS \n\n<b>Note:</b> <i>Withdraw request can take up to 3 hours to be completed.</i>`,
+                    parse_mode: 'HTML'
+                }
             }
         ]
 
